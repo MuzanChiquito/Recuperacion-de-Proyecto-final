@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas Seguras</title>
+    <link rel="icon" type="acc-img" href="../LogoPagina.png">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        nav .nav-link {
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 6px;
+            width: 0;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        nav .nav-link:hover::after {
+            width: 60%;
+        }
+
+        .contenedor {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #aaa;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#662532;">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="../LogoPagina.png" height="80" width="80">
+            <img src="../logo.png" height="80px" width="210">
+            <div class="collapse navbar-collapse" id="menu">
+                
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="http://localhost/ProyectoFinal/Pruevas/inicio.php">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost/ProyectoFinal/Pruevas/Tipos%20de%20cascos%20y%20Practicas%20de%20Manejo/Tipos%20de%20casco.php">Tipos de Cascos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Contacto/contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost/ProyectoFinal/Pruevas/Accidentes/accidentes.php">Accidentes</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+            <h1 class="fw-bold text-purple">Prácticas Seguras</h1>
+            <p class="text-muted">Recomendaciones clave para motociclistas</p>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="h4 text-secondary mb-3">Prácticas de Seguridad</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Uso obligatorio del casco certificado y bien ajustado.</li>
+                    <li class="list-group-item">Equipo adicional: guantes, botas, chaqueta con protecciones y ropa reflectante.</li>
+                    <li class="list-group-item">Respeto a las normas de tránsito y límites de velocidad.</li>
+                    <li class="list-group-item">Conducción defensiva evitando puntos ciegos y manteniendo distancia.</li>
+                    <li class="list-group-item">No circular entre carriles para evitar riesgos innecesarios.</li>
+                    <li class="list-group-item">Evitar distracciones: no usar celular ni auriculares.</li>
+                    <li class="list-group-item">Revisar las condiciones mecánicas de la motocicleta antes de cada viaje.</li>
+                    <li class="list-group-item">Adaptar velocidad y conducción a las condiciones del clima.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="h4 text-secondary mb-3">Recomendaciones Adicionales</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Capacitación continua en manejo seguro.</li>
+                    <li class="list-group-item">Evitar consumo de alcohol o drogas al conducir.</li>
+                    <li class="list-group-item">Planificar rutas más seguras y con buena iluminación.</li>
+                    <li class="list-group-item">Promover la conciencia social y el respeto vial.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>Proyecto escolar - Seguridad Vial para Motociclistas | Equipo Base</p>
+    </footer>
+
+    <script 
+        src="../JS/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

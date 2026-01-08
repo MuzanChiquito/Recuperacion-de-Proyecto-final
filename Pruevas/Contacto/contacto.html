@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="acc-img" href="../LogoPagina.png">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        nav .nav-link {
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        nav .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 6px;
+            width: 0;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        nav .nav-link:hover::after {
+            width: 60%;
+        }
+
+        .contenedor {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #aaa;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .contenedor {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            width: 50%;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #aaa;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#662532;">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="../LogoPagina.png" height="80" width="80">
+            <img src="../logo.png" height="80px" width="210">
+            <div class="collapse navbar-collapse" id="menu">
+                
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="http://localhost/ProyectoFinal/Pruevas/inicio.php">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Tipos de cascos y Practicas de Manejo/practicasmanejo.html">Prácticas Seguras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost/ProyectoFinal/Pruevas/Tipos%20de%20cascos%20y%20Practicas%20de%20Manejo/Tipos%20de%20casco.php">Tipos de Cascos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost/ProyectoFinal/Pruevas/Accidentes/accidentes.php">Accidentes</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="contenedor">
+        <h2>¡Contactanos!</h2>
+        <form class="formulario" action="" method="get">
+            Telefono: <input type="number" name="telefono"><br><br>
+            Nombre: <input type="text" name="nombre"><br><br>
+            Email: <input type="email" name="email"><br><br>
+            <input type="submit" value="Contactar" class="con">
+        </form>
+        <p>Queremos saber tus dudas, contamos con apoyo para tu educacion vial, 
+            recuerda, ¡Tu vida y seguridad son importantes!</p>
+    </div>
+
+    
+<script src="../JS/bootstrap.bundle.min.js"></script>
+</body>
+<footer>
+    <p>Proyecto escolar - Seguridad Vial para Motociclistas | Equipo Base</p>
+</footer>
